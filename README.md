@@ -2,11 +2,8 @@
 
 Crie um post com **título** e **conteúdo**, envie via **POST** para a API pública **JSONPlaceholder** e veja o **resultado renderizado** na mesma página.
 
-**Live demo:** _(adicione quando publicar)_  
-`https://dmm76.github.io/posting--page/`
-
-**Repositório:**  
-`https://github.com/dmm76/posting--page`
+**Live demo:** https://dmm76.github.io/posting--page/  
+**Repositório:** https://github.com/dmm76/posting--page
 
 ---
 
@@ -22,29 +19,26 @@ Crie um post com **título** e **conteúdo**, envie via **POST** para a API púb
 
 ## 🛠️ Tecnologias
 
-- HTML semântico
-- CSS leve (layout responsivo)
-- JavaScript Vanilla (DOM + fetch)
+HTML semântico · CSS leve (responsivo) · JavaScript Vanilla (DOM + fetch)
 
 ---
 
 ## 🚀 Como executar
 
-1. Baixe/clonar este repositório.
+1. Clone este repositório.
 2. Abra `index.html` no navegador  
    _ou_ use **VS Code + Live Server** (recomendado).
 
-**Deploy com GitHub Pages:**  
-Settings → Pages → _Deploy from a branch_ → `main` / **root**.
+**Deploy (GitHub Pages):** Settings → Pages → _Deploy from a branch_ → `main` / **root**.
 
 ---
 
 ## 🔌 API (POST)
 
-Endpoint: `https://jsonplaceholder.typicode.com/posts`  
-Headers: `Content-type: application/json; charset=UTF-8`
+**Endpoint:** `https://jsonplaceholder.typicode.com/posts`  
+**Headers:** `Content-type: application/json; charset=UTF-8`
 
-Body (exigido):
+**Body (exigido):**
 
 ```json
 {
