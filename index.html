@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Posting — Simulador de Post</title>
+    <meta
+      name="description"
+      content="Crie seu post personalizado: preencha o título e o conteúdo, clique em Publicar e veja o resultado renderizado na tela."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1>Bem-vindo! Este blog é para você</h1>
+        <nav aria-label="Atalhos">
+          <a href="#form">Novo Post</a>
+          <a href="#resultado">Resultado</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- ENTRADA (input) -->
+      <section id="form" class="card" aria-labelledby="form-title">
+        <h2 id="form-title">Criar um novo post</h2>
+        <p class="muted">
+          Crie seu post personalizado. Clique em <strong>Publicar</strong> e
+          veja o resultado!
+        </p>
+
+        <form id="post-form" novalidate>
+          <label for="titulo">Título</label>
+          <input
+            id="titulo"
+            name="titulo"
+            type="text"
+            placeholder="Ex.: Meu primeiro post"
+            minlength="3"
+            maxlength="120"
+            aria-describedby="contador"
+            required
+          />
+
+          <label for="conteudo">Conteúdo</label>
+          <textarea
+            id="conteudo"
+            name="conteudo"
+            rows="6"
+            placeholder="Escreva algo interessante..."
+            minlength="5"
+            required
+          ></textarea>
+
+          <div class="row">
+            <small id="contador" class="muted" aria-live="polite">0/120</small>
+            <button id="btn-enviar" type="submit">Publicar</button>
+          </div>
+
+          <p id="msg" class="msg" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- SAÍDA (output) -->
+      <section
+        id="resultado"
+        class="card"
+        aria-labelledby="render-section-title"
+      >
+        <h2 id="render-section-title">Resultado da postagem</h2>
+        <article class="post-render">
+          <h3
+            id="renderizador-titulo"
+            class="render-titulo"
+            aria-live="polite"
+          ></h3>
+          <p
+            id="renderizador-conteudo"
+            class="render-conteudo"
+            aria-live="polite"
+          ></p>
+          <small id="renderizador-meta" class="muted"></small>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small
+          >©
+          <a
+            href="https://www.monquero.dev.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Monquero Studios
+          </a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
